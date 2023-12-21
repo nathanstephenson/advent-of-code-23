@@ -23,7 +23,7 @@ func main() {
 		line := scanner.Text()
 		lines = append(lines, line)
 	}
-	symbolsByLine := map[int][]int{} // lines have to start at 1 so we know if value is present or not
+	symbolsByLine := map[int][]int{}
 	for i, v := range lines {
 		symbolsByLine[i] = getSymbolIndexes(v)
 	}
